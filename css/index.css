@@ -10,10 +10,61 @@
 	zoom: 1;
 }
 
+.child-nav {
+    margin: 15px 0;
+    text-align: center;
+    height: 39px;
+    background: #fff;
+    border-bottom: 1px solid #5FB878;
+}
+
+.child-nav-btn {
+    padding: 0 20px;
+    width: auto;
+    font-size: 14px;
+    line-height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.child-nav-btn-this {
+    background: #5FB878;
+    color: #fff;
+}
+
+.shadow {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);;
+}
 
 .layui-header {
 	z-index: 1000;
 }
+
+.layui-nav .login {
+	display: inline-block; 
+	font-size: 14px; 
+	height: 60px;
+	line-height: 60px;
+	color: #FFFFFF;
+}
+
+.login span {
+	margin-right: 5px;
+}
+
+.layui-nav .reg {
+	display: inline-block; 
+	font-size: 14px; 
+	margin-left: 10px;
+	color: #FFFFFF;
+}
+
+.avatar img {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+
 
 .Banner {
 	width: 100%;
@@ -32,16 +83,14 @@
 }
 
 .articleList {
-	
 	width: 850px;
 	height: 180px;
-	/*margin: 0.5px;*/
-	border: 1px solid #D3D4D3;
+	border: 0.5px solid #D3D4D3;
 	border-bottom: 0px;
 	clear: both;
 	background-color: #FFFFFF;
-	padding: 10px;
-	
+	padding: 5px;
+	border-left: 5px solid #FFFFFF;
 }
 
 .articleList a {
@@ -138,18 +187,8 @@
 	position: relative;
 }
 
-/*.note::after {
-	content: "...";
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	background: #FFFFFF;
-	padding-left: 10px;
-}*/
-
-
 .Article {
-	width: 850px;
+	width: 840px;
 }
 
 .sideBar {
@@ -192,17 +231,22 @@ footer {
 	margin-top: 20px;
 }
 
-
-article:hover {
+.articleList:hover {
 	background-color: #E2E2E2;
+	border-left: 5px solid #009E94;
 }
 
 .footer {
 	display: block!important;
+	background-color: #009E94;
+	color: #FFFFFF;
 	position: relative;
 	bottom: 0px;
 }
 
+.footer a {
+	color: #FFFFFF;
+}
 
 
 

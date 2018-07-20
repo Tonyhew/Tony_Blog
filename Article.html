@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>文章列表页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/Article.css" />
+    <link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+</head>
+
+<body class="layui-bg-gray">
+
+    <header class="layui-header layui-bg-black">
+        <div class="layui-container">
+            <a href="index.html" class="layui-logo">
+                <span class="layui-logo" style="color: #009E94; font-size: 28px; display: inline-block; margin-top: 15px;">Tonyhe’s Blog</span>
+                <!--<img src="img/Logo.png" width="125px" alt="Tonyhe’s Blog"  style="margin-top: 25px;" />-->
+            </a>
+
+            <ul class="layui-nav layui-layout-left layui-hide-xs">
+                <li class="layui-nav-item">
+                    <a href="Home.html">
+                        <i class="fa fa-home fa-fw"></i>
+                        &nbsp;首页
+                    </a>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="Article.html">
+                        <i class="fa fa-file-text fa-fw"></i>
+                        &nbsp;文章专栏
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="resource.html">
+                        <i class="fa fa-tags fa-fw"></i>
+                        &nbsp;资源分享
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="About.html">
+                        <i class="fa fa-info fa-fw"></i>
+                        &nbsp;关于本站
+                    </a>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right layui-hide-xs">
+                <li class="layui-nav-item login">
+                    <a href="Login.html">
+                        <span class="layui-icon layui-icon-user"></span>
+                        登录
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="Register.html">
+                        注册
+                    </a>
+                </li>
+                <!--<li class="layui-nav-item">-->
+                <!-- 登入后的状态 -->
+                <!--<a class="avatar" href="javascript:;">
+						<img src="http://tp4.sinaimg.cn/1345566427/180/5730976522/0">
+						<cite>贤心</cite>
+						<i>VIP2</i>
+					</a>
+					<dl class="layui-nav-child">
+						<dd><a href="javascript:;"><i class="iconfont icon-tuichu" style="top: 0; font-size: 22px;"></i>退了</a></dd>
+					</dl>
+					
+				</li>-->
+            </ul>
+        </div>
+
+    </header>
+
+
+    <section class="layui-main mainA">
+        <div class="Article over">
+            <div class="title">
+                <h3>最新博客</h3>
+            </div>
+            <article class="articleList over">
+                <a href="#">
+                    <img src="http://jspang.com/wp-content/uploads/2018/04/vuekoa2.jpg" />
+                </a>
+                <div class="headerMain">
+                    <header>
+                        <h2>
+                            <a href="#" class="layui-badge">其他</a>
+                            <a href="ArticleDetail.html" title="文章标题文章标题文章标题文章标题文章标题文章标题文章标题">
+                                文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题
+                            </a>
+                        </h2>
+                    </header>
+                    <p class="meta">
+                        <time class="fa fa-clock-o">2018-06-08</time>
+                        <span class="author">
+                            <i class="fa fa-user"></i>
+                            <a href="#">TonyHe</a>
+                        </span>
+                        <cite class="fa fa-eye">阅读(0)</cite>
+                        <a class="comment" href="#">
+                            <i class="fa fa-comment"></i>
+                            <a href="#">评论(0)</a>
+                        </a>
+
+                    </p>
+                    <p class="note">
+                        第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客 第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客
+                    </p>
+                </div>
+            </article>
+            <article class="articleList over">
+                <a href="#">
+                    <img src="http://jspang.com/wp-content/uploads/2018/04/vuekoa2.jpg" />
+                </a>
+                <div class="headerMain">
+                    <header>
+                        <h2>
+                            <a href="#" class="layui-badge">其他</a>
+                            <a href="ArticleDetail.html" title="文章标题文章标题文章标题文章标题文章标题文章标题文章标题">
+                                文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题
+                            </a>
+                        </h2>
+                    </header>
+                    <p class="meta">
+                        <time class="fa fa-clock-o">2018-06-08</time>
+                        <span class="author">
+                            <i class="fa fa-user"></i>
+                            <a href="#">TonyHe</a>
+                        </span>
+                        <cite class="fa fa-eye">阅读(0)</cite>
+                        <a class="comment" href="#">
+                            <i class="fa fa-comment"></i>
+                            <a href="#">评论(0)</a>
+                        </a>
+
+                    </p>
+                    <p class="note">
+                        第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客 第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客
+                    </p>
+                </div>
+            </article>
+            <article class="articleList over">
+                <a href="#">
+                    <img src="http://jspang.com/wp-content/uploads/2018/04/vuekoa2.jpg" />
+                </a>
+                <div class="headerMain">
+                    <header>
+                        <h2>
+                            <a href="#" class="layui-badge">其他</a>
+                            <a href="ArticleDetail.html" title="文章标题文章标题文章标题文章标题文章标题文章标题文章标题">
+                                文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题
+                            </a>
+                        </h2>
+                    </header>
+                    <p class="meta">
+                        <time class="fa fa-clock-o">2018-06-08</time>
+                        <span class="author">
+                            <i class="fa fa-user"></i>
+                            <a href="#">TonyHe</a>
+                        </span>
+                        <cite class="fa fa-eye">阅读(0)</cite>
+                        <a class="comment" href="#">
+                            <i class="fa fa-comment"></i>
+                            <a href="#">评论(0)</a>
+                        </a>
+
+                    </p>
+                    <p class="note">
+                        第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客 第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客
+                    </p>
+                </div>
+            </article>
+            <article class="articleList over">
+                <a href="#">
+                    <img src="http://jspang.com/wp-content/uploads/2018/04/vuekoa2.jpg" />
+                </a>
+                <div class="headerMain">
+                    <header>
+                        <h2>
+                            <a href="#" class="layui-badge">其他</a>
+                            <a href="ArticleDetail.html" title="文章标题文章标题文章标题文章标题文章标题文章标题文章标题">
+                                文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题
+                            </a>
+                        </h2>
+                    </header>
+                    <p class="meta">
+                        <time class="fa fa-clock-o">2018-06-08</time>
+                        <span class="author">
+                            <i class="fa fa-user"></i>
+                            <a href="#">TonyHe</a>
+                        </span>
+                        <cite class="fa fa-eye">阅读(0)</cite>
+                        <a class="comment" href="#">
+                            <i class="fa fa-comment"></i>
+                            <a href="#">评论(0)</a>
+                        </a>
+
+                    </p>
+                    <p class="note">
+                        第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客 第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客
+                    </p>
+                </div>
+            </article>
+            <article class="articleList over">
+                <a href="#">
+                    <img src="http://jspang.com/wp-content/uploads/2018/04/vuekoa2.jpg" />
+                </a>
+                <div class="headerMain">
+                    <header>
+                        <h2>
+                            <a href="#" class="layui-badge">其他</a>
+                            <a href="ArticleDetail.html" title="文章标题文章标题文章标题文章标题文章标题文章标题文章标题">
+                                文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题
+                            </a>
+                        </h2>
+                    </header>
+                    <p class="meta">
+                        <time class="fa fa-clock-o">2018-06-08</time>
+                        <span class="author">
+                            <i class="fa fa-user"></i>
+                            <a href="#">TonyHe</a>
+                        </span>
+                        <cite class="fa fa-eye">阅读(0)</cite>
+                        <a class="comment" href="#">
+                            <i class="fa fa-comment"></i>
+                            <a href="#">评论(0)</a>
+                        </a>
+
+                    </p>
+                    <p class="note">
+                        第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客 第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客
+                    </p>
+                </div>
+            </article>
+            <article class="articleList over">
+                <a href="#">
+                    <img src="http://jspang.com/wp-content/uploads/2018/04/vuekoa2.jpg" />
+                </a>
+                <div class="headerMain">
+                    <header>
+                        <h2>
+                            <a href="#" class="layui-badge">其他</a>
+                            <a href="ArticleDetail.html" title="文章标题文章标题文章标题文章标题文章标题文章标题文章标题">
+                                文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题
+                            </a>
+                        </h2>
+                    </header>
+                    <p class="meta">
+                        <time class="fa fa-clock-o">2018-06-08</time>
+                        <span class="author">
+                            <i class="fa fa-user"></i>
+                            <a href="#">TonyHe</a>
+                        </span>
+                        <cite class="fa fa-eye">阅读(0)</cite>
+                        <a class="comment" href="#">
+                            <i class="fa fa-comment"></i>
+                            <a href="#">评论(0)</a>
+                        </a>
+
+                    </p>
+                    <p class="note">
+                        第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客 第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客
+                    </p>
+                </div>
+            </article>
+            <article class="articleList over">
+                <a href="#">
+                    <img src="http://jspang.com/wp-content/uploads/2018/04/vuekoa2.jpg" />
+                </a>
+                <div class="headerMain">
+                    <header>
+                        <h2>
+                            <a href="#" class="layui-badge">其他</a>
+                            <a href="ArticleDetail.html" title="文章标题文章标题文章标题文章标题文章标题文章标题文章标题">
+                                文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题
+                            </a>
+                        </h2>
+                    </header>
+                    <p class="meta">
+                        <time class="fa fa-clock-o">2018-06-08</time>
+                        <span class="author">
+                            <i class="fa fa-user"></i>
+                            <a href="#">TonyHe</a>
+                        </span>
+                        <cite class="fa fa-eye">阅读(0)</cite>
+                        <a class="comment" href="#">
+                            <i class="fa fa-comment"></i>
+                            <a href="#">评论(0)</a>
+                        </a>
+
+                    </p>
+                    <p class="note">
+                        第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客 第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客
+                    </p>
+                </div>
+            </article>
+            <article class="articleList over">
+                <a href="#">
+                    <img src="http://jspang.com/wp-content/uploads/2018/04/vuekoa2.jpg" />
+                </a>
+                <div class="headerMain">
+                    <header>
+                        <h2>
+                            <a href="#" class="layui-badge">其他</a>
+                            <a href="ArticleDetail.html" title="文章标题文章标题文章标题文章标题文章标题文章标题文章标题">
+                                文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题
+                            </a>
+                        </h2>
+                    </header>
+                    <p class="meta">
+                        <time class="fa fa-clock-o">2018-06-08</time>
+                        <span class="author">
+                            <i class="fa fa-user"></i>
+                            <a href="#">TonyHe</a>
+                        </span>
+                        <cite class="fa fa-eye">阅读(0)</cite>
+                        <a class="comment" href="#">
+                            <i class="fa fa-comment"></i>
+                            <a href="#">评论(0)</a>
+                        </a>
+
+                    </p>
+                    <p class="note">
+                        第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客 第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客第一篇技术博客
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="layui-tab-card layui-layout-right sideBar layui-hide-xs">
+            <ul class="layui-tab-title sideBarTitle">
+                <li class="layui-this">网站公告</li>
+            </ul>
+            <div class="layui-tab-content sideMain">
+                <div class="layui-tab-item layui-show">个人博客上线了</div>
+            </div>
+        </div>
+
+        <div class="layui-tab-card layui-layout-right sideBarTwo layui-hide-xs" lay-filter="sideBar">
+            <ul class="layui-tab-title sideBarTitle">
+                <li class="layui-this">近期文章</li>
+            </ul>
+            <div class="layui-tab-content sideMain" id="sideTwo">
+                <div class="layui-tab-item layui-show">
+                    <a href="#">articleOne</a>
+                </div>
+                <div class="layui-tab-item layui-show">
+                    <a href="#">articleOne</a>
+                </div>
+                <div class="layui-tab-item layui-show">
+                    <a href="#">articleOne</a>
+                </div>
+                <div class="layui-tab-item layui-show">
+                    <a href="#">articleOne</a>
+                </div>
+                <div class="layui-tab-item layui-show">
+                    <a href="#">articleOne</a>
+                </div>
+                <div class="layui-tab-item layui-show">
+                    <a href="#">articleOne</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="layui-footer footer" style="text-align: center;">
+        <div>
+            <a href="javascript:void()" target="_blank">Tonyhe的博客</a>
+            2017 &copy;
+            <a href="javascript:void()" target="_blank">Tonyhe出品</a>
+        </div>
+        <div>
+            <a href="javascript:void()" target="_blank">微信公众号</a>
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        layui.use(['layer', 'element'], function () {
+            var layer = layui.layer
+            element = layui.element;
+            var carousel = layui.carousel;
+            var laypage = layui.laypage;
+
+            laypage.render({
+                elem: 'pages',
+                count: 50 //数据总数，从服务端得到
+            });
+
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>
