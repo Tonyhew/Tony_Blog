@@ -1,3 +1,6 @@
+.layui-main {
+  min-height: 66vh;
+}
 .layui-tab-title {
   text-align: center;
 }

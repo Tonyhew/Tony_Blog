@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>关于本站</title>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/about.css">
+	<link rel="stylesheet" type="text/css" href="../../css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="../../layui/css/layui.css" />
+</head>
+
+<body class="layui-bg-gray">
+
+	<header class="layui-header layui-bg-black">
+		<div class="layui-container">
+			<a href="index.html" class="layui-logo">
+				<span class="layui-logo" style="color: #009E94; font-size: 28px; display: inline-block; margin-top: 15px;">Tonyhe’s Blog</span>
+				<!--<img src="img/Logo.png" width="125px" alt="Tonyhe’s Blog"  style="margin-top: 25px;" />-->
+			</a>
+
+			<ul class="layui-nav layui-layout-left layui-hide-xs">
+				<li class="layui-nav-item">
+					<a href="../Home.html">
+						<i class="fa fa-home fa-fw"></i>
+						&nbsp;首页
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Article.html">
+						<i class="fa fa-file-text fa-fw"></i>
+						&nbsp;文章专栏
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="Resource.html">
+						<i class="fa fa-tags fa-fw"></i>
+						&nbsp;资源分享
+					</a>
+				</li>
+				<li class="layui-nav-item layui-this">
+					<a href="About.html">
+						<i class="fa fa-info fa-fw"></i>
+						&nbsp;关于本站
+					</a>
+				</li>
+			</ul>
+			<ul class="layui-nav layui-layout-right layui-hide-xs">
+				<li class="layui-nav-item login">
+					<a href="../user/Login.html">
+						<span class="layui-icon layui-icon-user"></span>
+						登录
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="../user/Register.html">
+						注册
+					</a>
+				</li>
+				<li class="layui-nav-item">
+					<!-- 登入后的状态-->
+					<a class="avatar" href="javascript:;">
+						<img src="http://tp4.sinaimg.cn/1345566427/180/5730976522/0">
+						<cite>贤心</cite>
+						<i>VIP2</i>
+					</a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="../user/setting.html">
+								<span class="setting">设置</span>
+							</a>
+						</dd>
+						<dd>
+							<a href="javascript:;">
+								<i class="iconfont icon-tuichu" style="top: 0; font-size: 22px;"></i>退了</a>
+						</dd>
+					</dl>
+
+				</li>
+			</ul>
+		</div>
+
+	</header>
+	
+	<canvas id="canvas-banner" style="background: #393D49; width: 100%; height: 200px;"></canvas>
+	<!--为了及时效果需要立即设置canvas宽高，否则就在home.js中设置-->
+	<script type="text/javascript">
+		var canvas = document.getElementById('canvas-banner');
+		canvas.width = window.document.body.clientWidth - 10; //减去滚动条的宽度
+		if (screen.width >= 992) {
+			canvas.height = window.innerHeight * 1 / 3;
+		} else {
+			canvas.height = window.innerHeight * 2 / 7;
+		}
+	</script>
+
+	<div class="layui-main">
+
+		<div class="layui-tab layui-tab-brief shadow" lay-filter="tabAbout">
+			<ul class="layui-tab-title">
+				<li lay-id="1">关于博客</li>
+				<li lay-id="2">关于作者</li>
+				<li lay-id="3" id="friendlink">友情链接</li>
+				<li lay-id="4">留言墙</li>
+			</ul>
+			<div class="layui-tab-content">
+				<div class="layui-tab-item">
+					<div class="aboutinfo">
+						<div class="aboutinfo-figure">
+							<img src="../../img/logo/Logo2.png" alt="Tonyhe's Blog" />
+						</div>
+						<p class="aboutinfo-nickname">Tonyhe's Blog</p>
+						<p class="aboutinfo-introduce">一个前端程序员的个人博客，记录博主学习和成长之路，分享前端和PHP方面技术和源码</p>
+						<p class="aboutinfo-location">
+							<i class="fa fa-link"></i>&nbsp;&nbsp;
+							<a target="_blank" href="http://www.lyblogs.cn">www.tonyhew.cn</a>
+						</p>
+						<hr />
+						<div class="aboutinfo-contact">
+							<a target="_blank" title="网站首页" href="Home.html">
+								<i class="fa fa-home fa-2x" style="font-size:2.5em;position:relative;top:3px"></i>
+							</a>
+							<a target="_blank" title="文章专栏" href="Article.html">
+								<i class="fa fa-file-text fa-2x"></i>
+							</a>
+							<a target="_blank" title="资源分享" href="Resource.html">
+								<i class="fa fa-tags fa-2x"></i>
+							</a>
+						</div>
+
+						<fieldset class="layui-elem-field layui-field-title">
+							<legend>简介</legend>
+							<div class="layui-field-box aboutinfo-abstract">
+								<p style="text-align:center;">Tony's Blog是一个由PHP MySQL开发的个人博客网站，诞生于2018年7月15日，暂且称为Blog1.0。</p>
+								<h1>当前版本:</h1>
+								<p>
+									前端框架使用Layui、fontawesome字体等，后端使用PHP + MySQL,php框架使用Thinkphp5.0国产框架。之后会不断改进。
+								</p>
+								<h1 style="margin-left: 46.5%;">The End</h1>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+
+				<div class="layui-tab-item">
+					<div class="aboutinfo">
+						<div class="aboutinfo-figure">
+							<img src="../../img/avatar/7.jpg" alt="Tony" />
+						</div>
+						<p class="aboutinfo-nickname">Tony</p>
+						<p class="aboutinfo-introduce">一枚90后程序员，前端开发工程师，略懂PHP</p>
+						<p class="aboutinfo-location">
+							<i class="fa fa-location-arrow"></i>&nbsp;上海 - 上海</p>
+						<hr />
+						<div class="aboutinfo-contact">
+							<a target="_blank" title="QQ交流" href="javascript:layer.msg('启动QQ会话窗口')">
+								<i class="fa fa-qq fa-2x"></i>
+							</a>
+							<a target="_blank" title="给我写信" href="javascript:layer.msg('启动邮我窗口')">
+								<i class="fa fa-envelope fa-2x"></i>
+							</a>
+							<a target="_blank" title="新浪微博" href="javascript:layer.msg('转到你的微博主页')">
+								<i class="fa fa-weibo fa-2x"></i>
+							</a>
+						</div>
+						<fieldset class="layui-elem-field layui-field-title">
+							<legend>简介</legend>
+							<div class="layui-field-box aboutinfo-abstract abstract-bloger">
+								<p style="text-align:center;">Tony，Tony's Blog创始人，诞生于1996年8月31日，目前是一个码农，从事前端开发。</p>
+								<h1>个人介绍:</h1>
+								<p>一个没有故事的男同学，没什么介绍......</p>
+								<h1 style="margin-left: 46.5%;">The End</h1>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+
+				<div class="layui-tab-item">
+					<div class="aboutinfo">
+						<div class="aboutinfo-figure">
+							<img src="http://127.0.0.1:8848/blogtemplet/images/handshake.png" alt="友情链接" />
+						</div>
+						<p class="aboutinfo-nickname">友情链接</p>
+						<p class="aboutinfo-introduce">Name：Tony's Blog&nbsp;&nbsp;&nbsp;&nbsp;Site：www.lyblogs.cn</p>
+						<p class="aboutinfo-location">
+							<i class="fa fa-close"></i>经常宕机&nbsp;
+							<i class="fa fa-close"></i>不合法规&nbsp;
+							<i class="fa fa-close"></i>插边球站&nbsp;
+							<i class="fa fa-close"></i>红标报毒&nbsp;
+							<i class="fa fa-check"></i>原创优先&nbsp;
+							<i class="fa fa-check"></i>技术优先
+						</p>
+						<hr />
+						<div class="aboutinfo-contact">
+							<p style="font-size:2em;">互换友链，携手并进！</p>
+						</div>
+						<fieldset class="layui-elem-field layui-field-title">
+							<legend>Friend Link</legend>
+							<div class="layui-field-box">
+								<ul class="friendlink">
+									<li>
+										<a target="_blank" href="http://www.layui.com/" title="Layui" class="friendlink-item">
+											<p class="friendlink-item-pic">
+												<img src="http://www.layui.com/favicon.ico" alt="Layui" />
+											</p>
+											<p class="friendlink-item-title">Layui</p>
+											<p class="friendlink-item-domain">layui.com</p>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="http://www.pagemark.cn/" title="页签" class="friendlink-item">
+											<p class="friendlink-item-pic">
+												<img src="img/logo/Logo.png" alt="页签" />
+											</p>
+											<p class="friendlink-item-title">页签</p>
+											<p class="friendlink-item-domain">pagemark.cn</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+				<div class="layui-tab-item">
+					<div class="aboutinfo">
+						<div class="aboutinfo-figure">
+							<img src="http://127.0.0.1:8848/blogtemplet/images/messagewall.png" alt="留言墙" />
+						</div>
+						<p class="aboutinfo-nickname">留言墙</p>
+						<p class="aboutinfo-introduce">本页面可留言、吐槽、提问。欢迎灌水，杜绝广告！</p>
+						<p class="aboutinfo-location">
+							<i class="fa fa-clock-o"></i>&nbsp;
+							<span id="time"></span>
+						</p>
+						<hr />
+						<div class="aboutinfo-contact">
+							<p style="font-size:2em;">沟通交流，拉近你我！</p>
+						</div>
+						<fieldset class="layui-elem-field layui-field-title">
+							<legend>Leave a message</legend>
+							<div class="layui-field-box">
+								<div class="leavemessage" style="text-align:initial">
+									<form class="layui-form blog-editor" action="">
+										<div class="layui-form-item" id="editor" lay-verify="content">
+											<textarea name="editorContent" lay-verify="content" id="remarkEditor" placeholder="请输入内容" class="layui-textarea layui-hide"></textarea>
+										</div>
+
+										<div class="layui-form-item">
+											<button class="layui-btn btn2" lay-submit="formLeaveMessage" lay-filter="formLeaveMessage">提交留言</button>
+										</div>
+									</form>
+									<ul class="blog-comment">
+										<li>
+											<div class="comment-parent">
+												<img src="../../img/avatar/0.jpg" alt="Tony" />
+												<div class="info">
+													<span class="username">Tony</span>
+												</div>
+												<div class="content">
+													我为大家做了模拟留言与回复！试试吧！
+												</div>
+												<p class="info info-footer">
+													<span class="time">2018-07-11 21:33</span>
+													<span class="place">上海</span>
+													<a class="btn-reply" href="javascript:;" onclick="btnReplyClick(this)">回复</a>
+												</p>
+											</div>
+											<hr />
+											<div class="comment-child">
+												<img src="../../img/avatar/00.jpg" alt="Absolutely" />
+												<div class="info comment-content">
+													<span class="username">Absolutely</span>
+													<span>这是用户回复内容</span>
+												</div>
+												<p class="info">
+													<span class="time">2018-07-11 21:33</span>
+													<span class="place">上海</span>
+												</p>
+											</div>
+											<div class="comment-child">
+												<img src="../../img/avatar/00.jpg" alt="Absolutely" />
+												<div class="info comment-content">
+													<span class="username">Absolutely</span>
+													<span>这是第二个用户回复内容</span>
+												</div>
+												<p class="info">
+													<span class="time">2018-07-11 21:33</span>
+													<span class="place">上海</span>
+												</p>
+											</div>
+											<!-- 回复表单默认隐藏 -->
+											<div class="replycontainer layui-hide">
+												<form class="layui-form" action="">
+													<div class="layui-form-item">
+														<textarea name="replyContent" lay-verify="replyContent" placeholder="请输入回复内容" class="layui-textarea" style="min-height:80px;"></textarea>
+													</div>
+													<div class="layui-form-item">
+														<button class="layui-btn layui-btn-mini" lay-submit="formReply" lay-filter="formReply">提交</button>
+													</div>
+												</form>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+	<footer class="layui-footer footer" style="text-align: center;">
+		<div>
+			<a href="javascript:void()" target="_blank">Tonyhe的博客</a>
+			2017 &copy;
+			<a href="javascript:void()" target="_blank">Tonyhe出品</a>
+		</div>
+		<div>
+			<a href="javascript:void()" target="_blank">微信公众号</a>
+		</div>
+
+	</footer>
+
+
+
+
+
+	<script src="../../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/About.js" type="text/javascript" charset="UTF-8"></script>
+	<script type="text/javascript">
+	</script>
+</body>
+
+</html>
