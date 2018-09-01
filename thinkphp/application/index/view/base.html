@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="/public/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="/public/css/resource.css" />
+		<link rel="stylesheet" type="text/css" href="/public/css/about.css" />
+		<link rel="stylesheet" type="text/css" href="/public/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="/public/layui/css/layui.css" />
+	</head>
+
+	<body class="layui-bg-gray">
+
+		<header class="layui-header layui-bg-black">
+			<div class="layui-container">
+				<a href="index.html" class="layui-logo">
+					<span class="layui-logo" style="color: #009E94; font-size: 28px; display: inline-block; margin-top: 15px;">Tonyhe’s Blog</span>
+					<!--<img src="img/Logo.png" width="125px" alt="Tonyhe’s Blog"  style="margin-top: 25px;" />-->
+				</a>
+
+				<ul class="layui-nav layui-layout-left layui-hide-xs">
+					<li class="layui-nav-item layui-this">
+						<a href="/index.php/index/index/index">
+							<i class="fa fa-home fa-fw"></i> &nbsp;首页
+						</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="/index.php/index/index/article">
+							<i class="fa fa-file-text fa-fw"></i> &nbsp;文章专栏
+						</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="/index.php/index/index/resources">
+							<i class="fa fa-tags fa-fw"></i> &nbsp;资源分享
+						</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="/index.php/index/index/about">
+							<i class="fa fa-info fa-fw"></i> &nbsp;关于本站
+						</a>
+					</li>
+				</ul>
+				<ul class="layui-nav layui-layout-right layui-hide-xs">
+					{empty name="Think.session.user_id"}
+					<li class="layui-nav-item login">
+						<a href="/index.php/index/user/login">
+							<span class="layui-icon layui-icon-user"></span> 登录
+						</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="/index.php/index/user/register">
+							注册
+						</a>
+					</li>
+					{/empty}
+					<!-- 登入后的状态 -->
+					{notempty name="Think.session.user_id"}
+					<li class="layui-nav-item">
+						<!-- 登入后的状态-->
+						<a class="avatar" href="javascript:;">
+							<img src="/public/img/avatar/10.jpg">
+							<cite>{$Think.cookie.user_nickname}</cite>
+							<span>{$Think.cookie.user_place}</span>
+						</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="/index.php/index/user/setting">
+									<span class="setting">设置</span>
+								</a>
+							</dd>
+							<dd>
+								<a href="/index.php/index/user/logout">
+									<i class="iconfont icon-tuichu" style="top: 0; font-size: 22px;"></i>退了</a>
+							</dd>
+						</dl>
+
+					</li>
+					{/notempty}
+				</ul>
+
+			</div>
+
+		</header>
+
+		{block name="main"}{/block}
+
+		<footer class="layui-footer footer" style="text-align: center;">
+			<div>
+				<a href="javascript:void()" target="_blank">Tonyhe的博客</a>
+				2017 &copy;
+				<a href="javascript:void()" target="_blank">Tonyhe出品</a>
+			</div>
+			<div>
+				<a href="javascript:void()" target="_blank">微信公众号</a>
+			</div>
+
+		</footer>
+
+		<script type="text/javascript" src="/public/js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="/public/layui/layui.all.js"></script>
+		<script src="/public/js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/public/js/About.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			layui.use(['layer', 'element'], function() {
+				var layer = layui.layer
+				element = layui.element;
+				var carousel = layui.carousel;
+				var laypage = layui.laypage;
+
+				laypage.render({
+					elem: 'pages' //注意，这里的 test1 是 ID，不用加 # 号
+						,
+					count: 50 //数据总数，从服务端得到
+				});
+
+				carousel.render({
+					elem: '#banner',
+					arrow: 'hover',
+					width: '100%',
+					height: '500px',
+					interval: 3000,
+					anim: 'fade',
+					indicator: 'inside'
+				});
+
+			});
+			$(".layui-nav-item a").each(function() {
+				if($(this)[0].href == String(window.location) && $(this).attr('href') != "") {
+					$(this).parents("li").addClass("layui-this").siblings().removeClass("layui-this");
+				}
+			});
+		</script>
+
+		{block name="script"}{/block}
+	</body>
+
+</html>
